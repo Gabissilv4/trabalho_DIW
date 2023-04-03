@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=>, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+  <title>GALA|</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Pesquisa">
+  <meta name="mobile-web-app-capable" content="yes">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container row">
+      <div class="logo-container col-12 col-md-2 d-flex justify-content-center">
+        <img class="logo" src="img/logo.png" alt="logo" />
+        <!-- <h1 class="introducao">Seja bem vindo ao site!!</h1> -->
+      </div>
+      <div class="caixa-pesquisa col-12 col-md-5">
+        <div class="pesquisa-container">
+
+          <input type="text" name="q" class="pesquisa" placeholder="Pesquisar" id="busca-query">
+          <button class="search-bnt" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+
+        </div>
+      </div>
+
+      <nav class="menu-desktop col-12 col-md-5">
+        <ul>
+          <li><a href="#">Entrar</a></li>
+          <li><a href="#">Cadastro</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Encomendas</a></li>
+        </ul>
+      </nav>
+      <button id="icone-mobile" title="Menu" onclick="mostraMenu()">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="#">Entrar</a></li>
+        <li><a href="#">Cadastro</a></li>
+        <li><a href="#">Suporte</a></li>
+        <li><a href="#">Encomendas</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+
+    <div id="container">
+      <div id="busca-carrossel" class="row">
+        <div id="form" class="col-12 col-md-4">
+          <form action="">
+            <h4>Busca rápida</h4>
+            <h5>Ache o produto que você procura</h5>
+            <div class="gap-items">
+              <select name="tipo" id="">
+                <option value="type 1">Brincos</option>
+                <option value="type 2">Aneis</option>
+                <option value="type 3">Pulseiras</option>
+                <option value="type 4">Tiaras</option>
+              </select>
+
+
+              <select name="categoria" id="">
+                <option value="type 1">Prata</option>
+                <option value="type 2">Ouro</option>
+                <option value="type 3">Rose</option>
+              </select>
+
+
+              <select name="valor" id="">
+                <option value="type 0">Valor</option>
+                <option value="type 1">R$50,00 a R$150,00</option>
+                <option value="type 2">R$200,00 a R$250,00</option>
+                <option value="type 3">R$300,00 a R$350,00</option>
+              </select>
+
+              <button id="btn-busca" class="w-100 d-block" type="submit">Buscar</button>
+
+            </div>
+          </form>
+        </div>
+
+
+        <!-- Carrossel -->
+        <section class="section col-12 col-md-8">
+          <div class="slider">
+            <div class="slide">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+
+              <div class="st first">
+                <img src="img/pulseira1.jpeg" alt="">
+              </div>
+              <div class="st">
+                <img src="img/anel1.jpeg" alt="">
+              </div>
+              <div class="st">
+                <img src="img/brinco1.jpeg" alt="">
+              </div>
+              <div class="st">
+                <img src="img/colar3.jpeg" alt="">
+              </div>
+              <div class="nav-auto">
+                <div class="a-b1"></div>
+                <div class="a-b2"></div>
+                <div class="a-b3"></div>
+                <div class="a-b4"></div>
+              </div>
+            </div>
+            <div class="nav-m">
+              <label for="radio1" class="m-btn"></label>
+              <label for="radio2" class="m-btn"></label>
+              <label for="radio3" class="m-btn"></label>
+              <label for="radio4" class="m-btn"></label>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="card-reviewed row">
+        <div class="cards-control col-12 col-md-8">
+          <div class="cards">
+            <div class="card-gabriela">
+              <img src="/img/anel1.jpeg" alt="">
+              <p>Anel Borboletas</p>
+              <p>R$59,90</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+
+            </div>
+
+            <div class="card-gabriela">
+              <img src="/img/brinco1.jpeg" alt="">
+              <p>Brinco argolas</p>
+              <p>R$75,00</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+
+            </div>
+
+            <div class="card-gabriela">
+              <img src="/img/colar4.jpeg" alt="">
+              <p> Colar Agate</p>
+              <p>R$110,00</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+            </div>
+          </div>
+          <div class="cards">
+            
+
+            <div class="card-gabriela">
+              <img src="/img/brinco4.jpeg" alt="">
+              <p>Brinco estrela </p>
+              <p>R$95,90</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+            </div>
+
+            <div class="card-gabriela">
+              <img src="/img/anel6.jpeg" alt="">
+              <p>Solitario outo</p>
+              <p>R$120,99</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+            </div>
+
+            <div class="card-gabriela">
+              <img src="/img/tiara3.jpeg" alt="">
+              <p>Tiara Ametista</p>
+              <p>R$78,90</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+            </div>
+          </div>
+          <div class="cards">
+
+            <div class="card-gabriela">
+              <img src="/img/colar5.jpeg" alt="">
+              <p>Colar Topázio</p>
+              <p>R$85,90</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+            </div>
+
+            <div class="card-gabriela">
+              <img src="/img/brinco2.jpeg" alt="">
+              <p>Brinco Corrente</p>
+              <p>R$55,90</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+            </div>
+
+            <div class="card-gabriela">
+              <img src="/img/pulseira1.jpeg" alt="">
+              <P>Pulseira Coração</P>
+              <p>R$49,90</p>
+              <br>
+              <img id="estrelas" src="img/estrelas.png">
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviewed col-12 col-md-4">
+          <div class="review"><img src="/img/anel5.jpeg" alt="Anel solitario Cristal">
+            <p>Anel Borboletas <br>
+              R$29,90</p>
+          </div>
+          <div class="review"><img src="/img/pulseira3.jpeg" alt="Conjunto de Pulseiras Prata">
+            <p>Anel Borboletas <br>
+              R$59,90</p>
+          </div>
+          <div class="review"><img src="/img/tiara2.jpeg" alt="Tiara Prata Pedrarias">
+            <p>Anel Borboletas <br>
+              R$79,90</p>
+          </div>
+          <div class="review"><img src="/img/pulseira4.jpeg" alt="Conjuntos Braceletes">
+            <p>Anel Borboletas <br>
+              R$19.90</p>
+          </div>
+          <button id="vejamais">Veja mais</button>
+        </div>
+      </div>
+      <div id="news-control">
+        <form id="form-news" action="action_page.php">
+          <div class="newsletter">
+            <h2>Assine a nossa Newsletter <3< /h2>
+                <p>Se inscreva para receber as novidades do site!</p>
+          </div>
+
+          <div class="newsletter">
+            <input type="text" placeholder="Nome" name="name" required>
+            <input type="text" placeholder="Email" name="mail" required>
+            <label>
+              <input type="checkbox" checked="checked" name="Inscrever-se"> Boletim Diário
+            </label>
+          </div>
+
+          <div class="news-input">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById("radio" + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 5000);
+  </script>
+  <footer>
+    <div id="rodape" class="row">
+      <div class="pagamentos col-12 col-md-3">
+        <h3 class="h3footer">Métodos de pagamento </h3>
+        <br>
+        <div id="logo_foot">
+          <img class="logo__footer" src="img/visa.png" alt="Visa">
+          <img class="logo__footer" src="img/master.png" alt="Mastercard">
+          <img class="logo__footer" src="img/pay.png" alt="Paypal">
+        </div>
+      </div>
+
+      <div class="links-rapidos col-12 col-md-3">
+        <a href="#" class="links-edit">Sobre nós</a>
+        <a href="#" class="links-edit">Política de privacidade</a>
+        <a href="#" class="links-edit">Termos de serviço</a>
+        <a href="#" class="links-edit">Contato</a>
+        <a href="#" class="links-edit">FAQ</a>
+        <a href="#" class="links-edit">Carrinho</a>
+      </div>
+
+      <div class="redes-sociais col-12 col-md-3">
+        <h3 class="h3footer">Siga-nos</h3>
+        <div id="logo_midia">
+
+          <a href="#"><img class="midia" src="img/insta.png" alt="Instagram"></a>
+          <a href="#"><img class="midia" src="img/tt.png" alt="Twitter"></a>
+        </div>
+      </div>
+
+      <div class="contato col-12 col-md-3">
+        <h3 class="h3footer">Entre em contato:</h3>
+        <p>Email: gabriela.silva.920369@sga.pucminas.br</p>
+        <p>Telefone: (31) 3539-6822</p>
+        <p>Endereço: Av. Amazonas, 2087 - Centro, Betim </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

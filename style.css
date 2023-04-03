@@ -1,0 +1,546 @@
+/* HEADER */
+header {
+  padding: 20px;
+  background-color:rgb(243, 242, 242);
+  color: #fff;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  margin-right: 20px;
+}
+
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .cards{
+    flex-direction: column !important;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+  }
+
+  .header-nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1300px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.secao-inicial {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-desktop {
+  
+  width: 40%;
+  color: black;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-desktop {
+    display: flex;
+  }
+}
+
+.menu-mobile {
+  display: none;
+  width: 100%;
+  padding: 16px 0;
+  background: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-mobile {
+    display: none !important;
+  }
+}
+
+.menu-mobile ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-mobile li {
+  display: flex;
+  width: 100%;
+}
+
+.menu-mobile li a {
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+
+.menu-mobile li a:hover {
+  background-color: #14cc8e;
+}
+
+#icone-mobile {
+  display: flex;
+  background: transparent;
+  color: rgb(2, 2, 2);
+  border: none;
+}
+
+@media screen and (min-width: 1200px) {
+  #icone-mobile {
+    display: none;
+  }
+}
+
+.menu-desktop li {
+  display: inline-block;
+}
+
+.menu-desktop li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 15px;
+}
+
+.menu-desktop li a:hover {
+  background-color: #c6c4c4;
+}
+
+.caixa-pesquisa {
+  width: 50%;
+}
+.pesquisa-container {
+  align-items: center;
+  margin: auto;
+}
+.pesquisa {
+  background: #ffffff;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  width: 70%;
+  padding: 8px;
+}
+.search-bnt {
+  color: rgb(46, 40, 40);
+  display: inline-block;
+  width: 1vw;
+  background-color: transparent;
+  border: none;
+  padding: 1%;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo-container h1 {
+  font-family: italic;
+  font-size: 20px;
+}
+.logo {
+  width: 160px;
+  font-weight: bold;
+}
+.content {
+  height: 520px;
+  width: 935px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar {
+  width: 70px;
+  height: 17px;
+  border: 2px solid;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Main */
+#container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right bottom, #d8f2ec, #d7eef5, #e0e8f6, #eae2ee, #eddfe3);
+}
+
+#busca-carrossel {
+  display: flex;
+}
+
+#form{
+  height: 250px;
+}
+
+#form form {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 15px;
+}
+select {
+  padding: 2px;
+  margin: 7px;
+  text-align-last: center;
+}
+h4{
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+h5{
+  font-size: 14px;
+    padding: 5px;
+    font-weight: bold;
+
+}
+.card-gabriela img { 
+  width: 175px;
+  height: 175px;
+
+}
+#estrelas { 
+  width: 200px;
+  height: 35px;
+align-items: center;
+}
+
+#btn-busca{
+  border: 1px solid black;
+  border-radius: 10px;
+background: none;
+}
+
+.card-reviewed{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+    align-items: center;
+}
+.cards-control{
+  display: flex;
+  flex-direction: column;  
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+}
+.card-gabriela{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: stretch;
+  padding: 30px;
+  margin: 40px;
+  border: 1px solid rgb(167, 157, 157);
+  border-radius: 10px;
+  box-shadow: 5px 10px #888888;
+
+}
+.review{
+  align-items: flex-start;
+  display: flex;
+  padding:  28px 0px;
+  border-bottom: 1px solid rgb(179, 168, 168);
+}
+.review p{
+ padding-left: 20px;
+ text-align: center;
+}
+/* .reviewed{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+#vejamais{
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font: 25px;
+  width: 100px;
+  background: none;
+}
+h1, h2, p{
+  font-family: monospace;
+  font-size: 16px;
+  padding: 5px;
+}
+h4, h5 {
+  font-family: serif;
+
+}
+  h4{
+    background-color: #FFf0f5;
+  }
+  option {
+    font-family: fantasy;
+  }
+  select{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: fantasy;
+  }
+
+#news-control{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+  /* Carrossel */
+
+ 
+.section{
+  width: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 16px;
+}
+
+.slider{
+  margin-top: 0px;
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 500%;
+    height: 500px;
+    display: flex;
+
+}
+.slide input{
+    display: none;
+}
+.st{
+    width: 20%;
+    transition: 0,5s;
+}
+.st img{
+    width: 700px;
+    height: 500px;
+}
+.nav-m{
+    position: absolute;
+    width: 800px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid #23e3c2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0,3s;
+}
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background-color: #23e3c2;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid #23e3c2;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0,3s;
+}
+.nav-auto div:not(:last-child){
+    margin-right:30px ;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: #23e3c2;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: #23e3c2;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: #23e3c2;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+    background-color: #23e3c2;
+}
+  .contanier review img{
+    display: flex;
+  align-items: right;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: stretch;
+  padding: 20px;
+  margin: 10px
+
+
+  }
+  .reviewed img { 
+    width: 175px;
+    height: 175px;
+    align-items: right;
+  }
+  #form-news {
+    border: 2px solid #978f8f;
+    border-radius: 10px;
+  }
+  
+  /* Add some padding and a grey background color to containers */
+  .newsletter {
+    padding: 20px;
+  }
+  .news-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    margin-top: 10px;
+    background-color: #04AA6D;
+    color: white;
+    border: 1px solid #04AA6D;
+    border-radius: 10px;
+    width: 150px;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+/* footer */
+
+.logo__footer{
+  width: 70px;
+}
+.midia{
+  padding: 10px;
+  margin: 10px;
+  width: 70px;
+}
+
+#logo_foot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pagamentos{
+  width: 25%;
+}
+#logo_midia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links-rapidos{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.redes-sociais{
+  width: 25%;
+}
+.links-rapidos a{
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.h3footer{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 7px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+#rodape{
+  display: flex;
+  background-color:rgb(243, 242, 242); ;
+}
+ .gap-items{
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+ }
